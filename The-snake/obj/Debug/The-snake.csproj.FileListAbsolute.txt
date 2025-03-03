@@ -1,7 +1,6 @@
 C:\Users\Артём\OneDrive\Мой рабочий стол\GitHub\The-snake\The-snake\bin\Debug\The-snake.exe.config
 C:\Users\Артём\OneDrive\Мой рабочий стол\GitHub\The-snake\The-snake\bin\Debug\The-snake.exe
 C:\Users\Артём\OneDrive\Мой рабочий стол\GitHub\The-snake\The-snake\bin\Debug\The-snake.pdb
-C:\Users\Артём\OneDrive\Мой рабочий стол\GitHub\The-snake\The-snake\obj\Debug\The-snake.csproj.AssemblyReference.cache
 C:\Users\Артём\OneDrive\Мой рабочий стол\GitHub\The-snake\The-snake\obj\Debug\The_snake.Properties.Resources.resources
 C:\Users\Артём\OneDrive\Мой рабочий стол\GitHub\The-snake\The-snake\obj\Debug\The-snake.csproj.GenerateResource.cache
 C:\Users\Артём\OneDrive\Мой рабочий стол\GitHub\The-snake\The-snake\obj\Debug\The-snake.csproj.CoreCompileInputs.cache

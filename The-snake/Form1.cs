@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.IO;
+using System.IO;  // Для Path.Combine
 using System.Windows.Forms;
 
 namespace The_snake
@@ -96,7 +96,6 @@ namespace The_snake
             int maxX = ClientSize.Width / gridSize;
             int maxY = ClientSize.Height / gridSize;
             Point p;
-            // Генерируем новую точку до тех пор, пока она не окажется вне змейки.
             do
             {
                 p = new Point(rand.Next(0, maxX) * gridSize, rand.Next(0, maxY) * gridSize);
@@ -114,7 +113,7 @@ namespace The_snake
             {
                 p = new Point(rand.Next(0, maxX) * gridSize, rand.Next(0, maxY) * gridSize);
             }
-            while (IsPointOnSnake(p) || p.Equals(apple)); // На всякий случай не генерируем бонус там же, где яблоко
+            while (IsPointOnSnake(p) || p.Equals(apple));
             bonus = p;
             bonusActive = true;
             bonusTicks = 0;
@@ -122,12 +121,34 @@ namespace The_snake
 
         private void Update(object sender, EventArgs e)
         {
+            // Проверка на победу: если змейка заняла все клетки.
+            int maxCells = (ClientSize.Width / gridSize) * (ClientSize.Height / gridSize);
+            if (snake.Count >= maxCells)
+            {
+                gameOver = true;
+            }
+
             if (gameOver)
             {
                 gameTimer.Stop();
-                MessageBox.Show($"Игра окончена! Ваш счет: {score}. Нажмите OK для новой игры.", "Конец игры");
-                StartGame();
-                gameTimer.Start();
+
+                string message = (snake.Count >= maxCells)
+                    ? $"Поздравляем! Вы победили!\nВаш счет: {score}"
+                    : $"Игра окончена!\nВаш счет: {score}";
+
+                // Показываем меню после окончания игры.
+                using (MenuForm menu = new MenuForm(message + "\n\nНажмите \"Продолжить\", чтобы сыграть снова,\nили \"Выйти\", чтобы закрыть игру."))
+                {
+                    if (menu.ShowDialog(this) == DialogResult.OK)
+                    {
+                        StartGame();
+                        gameTimer.Start();
+                    }
+                    else
+                    {
+                        Application.Exit();
+                    }
+                }
                 return;
             }
 
