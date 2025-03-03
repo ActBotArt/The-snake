@@ -17,3 +17,4 @@ C:\Users\Артём\OneDrive\Мой рабочий стол\The-snake\The-snake\
 C:\Users\Артём\OneDrive\Мой рабочий стол\The-snake\The-snake\obj\Debug\The-snake.csproj.CoreCompileInputs.cache
 C:\Users\Артём\OneDrive\Мой рабочий стол\The-snake\The-snake\obj\Debug\The-snake.exe
 C:\Users\Артём\OneDrive\Мой рабочий стол\The-snake\The-snake\obj\Debug\The-snake.pdb
+C:\Users\Артём\OneDrive\Мой рабочий стол\GitHub\The-snake\The-snake\obj\Debug\The-snake.csproj.AssemblyReference.cache
