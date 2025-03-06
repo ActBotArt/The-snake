@@ -2,9 +2,20 @@
 
 **The Snake: Корпоративная версия** – это классическая игра «Змейка», реализованная на C# с использованием Windows Forms. Приложение демонстрирует базовую механику игры, дополненную рядом дополнительных функций, таких как бонусы, динамическое изменение скорости и эстетичное оформление игрового поля. Проект написан в корпоративном стиле с подробными комментариями и структурированным кодом, что делает его отличной отправной точкой для начинающих разработчиков.
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/254576fe-ea83-4575-849b-612d2a884c0c" alt="photo_2025-03-03_19-36-58" width="50%">
-</div>
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/55795c94-409e-40f0-8f93-af0f046173a5" alt="photo_1" width="300px"/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/7bb8059a-c59d-4123-a2a6-7882f92d774b" alt="photo_2" width="300px"/>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/c1be2fed-4339-44d9-adca-fd2113f9e808" alt="photo_3" width="300px"/>
+    </td>
+  </tr>
+</table>
+
 
 ## Особенности проекта
 
